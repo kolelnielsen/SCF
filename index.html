@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A Cool Form</title>
+    <style>
+
+body {
+    max-width: 750px;
+    margin: auto;    
+    background-color: rgb(216, 208, 208);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+p {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 20px; 
+}
+
+.question {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+input {
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+    </style>
+</head>
+<body>
+    <form name="formtest" method="post" action="https://elearn.usu.edu/courses/itls-5265/forms/form_results.php">
+        
+            <div class="question">
+                <p>1. What is the <strong>primary</strong> reason for your visit to Silver City?</p>
+                <input type="radio" name="primary reason" value="I am a resident of Silver City"> I am a resident of Silver City <br>
+                 <input type="radio" name="primary reason" value="I work in Silver City"> I work in Silver City <br>
+                 <input type="radio" name="primary reason" value="I visit Silver City to shop or visit businesses"> I visit Silver City to shop or visit businesses <br>
+                 <input type="radio" name="primary reason" value="Tourist - Vacation"> Tourist - Vacation <br>
+                <input type="radio" name="primary reason" value="Other"> Other <br>
+                 <hr>
+            </div>
+        
+            <div class="question">
+             <p>2. Where are you from?</p> <br>
+             Zip code: <input type="text" id="myText" name="zip_code">
+             <hr>
+            </div>
+        
+            <div class="question">
+                <p>3. How often do you visit Silver City?</p>
+                 <select>
+                    <option value="i live here">I live here</option>
+                    <option value="several times a week">Several times a week</option> 
+                    <option value="several times a month">Several times a month</option> 
+                    <option value="several times a year">Several times a year</option>
+                    <option value="once a year or less">Once a year or less</option>
+                    <option value="I never visit silver city">I never visit Silver City</option>
+                 </select>
+                 <hr>
+          </div>
+
+        <div class="question">
+            <p>4. What would make down town Silver City more attractive for you to visit? <br> 
+                (check all that apply)</p>
+            <input type="checkbox" name="reason1" value="restaurants"> More restaurants <br>
+            <input type="checkbox" name="reason2" value="stores"> More specialty stores <br>
+            <input type="checkbox" name="reason3" value="shops"> More tourist type shops <br>
+            <input type="checkbox" name="reason4" value="businesses"> More professional businesses <br>
+            <input type="checkbox" name="reason5" value="parking"> Additional parking <br>
+            <input type="checkbox" name="reason6" value="bus route"> A bus route from nearby hotels or 
+            popular tourist spots <br>
+            <input type="checkbox" name="reason7" value="face lift"> Give the place a face lift <br>
+            <input type="checkbox" name="reason8" value="concerts"> Concerts and events held downtown <br>
+            <input type="checkbox" name="reason9" value="less tourists"> Less tourists, and more places for 
+            locals <br>
+            <hr>
+        </div>
+
+        <div class="question">
+            <p>5. What additional comments or suggestions do you have</p>
+            <textarea rows="7" cols="50">
+            </textarea>
+            <hr>
+        </div>
+
+        <div class="question">
+            <p>6. Email address if you would like to receive occasional information on what is happening 
+                in downtown Silver City</p>
+            E-mail:
+            <input type="email" name="email">
+            <hr>
+        </div>
+
+        <div id="submit">
+                <input type="submit" value="Submit">
+        </div>
+    </form>
+
+</body>
+</html>
